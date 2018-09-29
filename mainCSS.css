@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #222;
+	animation-name: colourPulse;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	font-family: 'Oswald', sans-serif;
+	font-size: x-large;
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	position: relative;
+	color: #ffffff;
+	overflow-x: hidden;
+}
+
+@keyframes colourPulse{
+  	0% {
+    	background-color: #222;
+  	}
+	50% {
+    	background-color: #22214A;
+  	}
+  	100% {
+    	background-color: #222;
+  	}
+}
+
+.banner{
+	position: relative;
+	background-image: url("images/banner.jpg");
+    background-repeat: no-repeat;
+	height: 200px;
+	width: 100%;
+ 	z-index: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	background-color: #222;
+}
+
+.banner-links{
+	position: absolute;
+	top:0;
+	right:0;
+	padding: 5px;
+}
+
+.banner-links img:hover{
+	animation-name: rotateElement;
+	animation-duration: 1s;
+}
+
+@keyframes rotateElement{
+	0%{
+		-ms-transform: rotate(0deg); /* IE 9 */
+    	-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+		transform: rotate(0deg);
+	}
+	50%{
+		-ms-transform: rotate(7deg);
+    	-webkit-transform: rotate(7deg);
+		transform: rotate(7deg);
+	}
+	100%{
+		-ms-transform: rotate(0deg);
+    	-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+
+.navbar{
+	text-align: center;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; 
+	color: #FFFFFF;
+	font-size: x-large;
+	position: absolute;
+    bottom: 0;
+}
+
+.navBar ul{
+	padding-top: 10px;
+	text-align: center;
+	list-style: none;
+}
+
+.navbar li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar a:link{
+	display:inline-block;
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+
+.navbar a:visited{
+	color: #FFFFFF;
+}
+
+.navbar a:hover{
+	animation-name: navHover;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	color: #FFFFFF;
+}
+
+.navbar a:active{
+	color: #FFFFFF;
+}
+
+@keyframes navHover{
+  	0% {
+		color: #FFFFFF;
+		transform: scale(1);
+  	}
+	25%{
+		color: #1200FF;
+	}
+	50% {
+		color: #FFFFFF;
+		transform: scale(1.1);
+  	}
+  	100% {
+		transform: scale(1);
+  	}
+}
+
+::selection {
+    background: #eeff00;
+    color: black;
+}
+::-moz-selection {
+    background: #eeff00;
+	color: black;
+}
+
+p{
+	text-align: left;
+	text-indent: 50px;
+}
+
+/*         Dividing Lines         */
+
+divline{
+	display: block;
+    border-top: 10px solid #000000;
+}
+
+lightdivline{
+	display: block;
+    border-top: 2px solid #180025;
+}
+
+/*         Footer         */
+
+#foot{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #222;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+#foot span{
+	font-family: 'Oswald', sans-serif;
+	font-size: small;
+}
+
+#foot divline{
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 0px;
+}
+
+/*         MAP SELECTION         */
+
+#map-selection{
+	text-align: center;
+	display: inline;
+}
+
+#map-selection button{
+	background-color: aliceblue;
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+	-ms-transform: skewX(-20deg);
+  	-webkit-transform: skewX(-20deg);
+  	transform: skewX(-20deg);
+}
+
+#map-selection button:hover{
+	animation: fadeMapSelectionColour 1s;
+	background-color: aqua;
+}
+
+@keyframes fadeMapSelectionColour{
+	0%{
+		background-color: aliceblue;
+	}
+	100%{
+		background-color: aqua;
+	}
+}
+
+/*         Map TYPE selection         */
+
+#mapTypeSelection{
+	text-align: center;
+	padding-top: 10px;
+	list-style: none;
+}
+
+#mapTypeSelection li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#mapTypeSelection button{
+	background-color: #FFB600;
+    border: none;
+    color: black;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	
+	-ms-transform: skewX(-20deg);
+  	-webkit-transform: skewX(-20deg);
+  	transform: skewX(-20deg);
+}
+
+#mapTypeSelection button:hover{
+	background-color: #C96A00;
+	animation: flash 0.5s ease-out;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

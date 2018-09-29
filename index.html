@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="mainCSS.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+<title>OverWatch Bug Tracker</title>
+</head>
+
+<body>
+
+<div class="banner">
+
+	<div class="banner-links">
+		<!--Comment>Can put social media links here if I make any for this<-->
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contributors.html">Contributors</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+	</div>
+</div>
+<divline></divline>
+<div id="map-selection">
+
+
+	<!--Comment>    Selection    <-->
+	<ul id="mapTypeSelection">
+		<li><button type="button" id="assaultMapsSelectionButton">Assault maps</button></li>
+		<li><button type="button" id="escortMapsSelectionButton">Escort maps</button></li>
+		<li><button type="button" id="hybridMapsSelectionButton">Hybrid maps</button></li>
+		<li><button type="button" id="controlMapsSelectionButton">Control maps</button></li>
+		<li><button type="button" id="arcadeMapsSelectionButton">Arcade maps</button></li>
+		<li><button type="button" id="otherMapsSelectionButton">Other maps</button></li>
+	</ul>
+	
+	<!--Comment>    Map divs    <-->
+	<div id="assaultmaps" style="display: none;">
+		<button type="button" onclick="hanamura()">Hanamura</button>
+		<button type="button" onclick="horizonLunar()">Horizon Lunar Colony</button>
+		<button type="button" onclick="templeOfAnubis()">Temple of Anubis</button>
+		<button type="button" onclick="volskayaIndustries()">Volskaya Industries</button>
+	</div>
+
+	<div id="escortMaps" style="display: none;">
+		<button type="button" id="dorado">Dorado</button>
+		<button type="button" id="junkertown">Junkertown</button>
+		<button type="button" id="rialto">Rialto</button>
+		<button type="button" id="route66">Route 66</button>
+		<button type="button" id="watchpointGibraltar">Watchpoint: Gibraltar</button>
+	</div>
+	
+	<div id="hybridMaps" style="display: none;">
+		<button type="button" id="blizzardWorld">Blizzard World</button>
+		<button type="button" id="eichenwalde">Eichenwalde</button>
+		<button type="button" id="hollywood">Hollywood</button>
+		<button type="button" id="kingsRow">King's Row</button>
+		<button type="button" id="numbani">Numbani</button>
+	</div>
+	
+	<div id="controlMaps" style="display: none;">
+		<button type="button" id="busan">Busan</button>
+		<button type="button" id="ilios">Ilios</button>
+		<button type="button" id="lijiangTower">Lijiang Tower</button>
+		<button type="button" id="nepal">Nepal</button>
+		<button type="button" id="oasis">Oasis</button>
+	</div>
+	
+	<div id="arcadeMaps" style="display: none;">
+		<button type="button" id="ayutthaya">Ayutthaya</button>
+		<button type="button" id="blackForest">Black Forest</button>
+		<button type="button" id="castillo">Castillo</button>
+		<button type="button" id="chateauGuillard">Château Guillard</button>
+		<button type="button" id="ecopointAntarctica">Ecopoint: Antarctica</button>
+		<button type="button" id="necropolis">Necropolis</button>
+		<button type="button" id="petra">Petra</button>
+	</div>
+	
+	<div id="otherMaps" style="display: none;">
+		<button type="button" id="practiceRange">Practice Range</button>
+		<button type="button" id="tutorial">Tutorial</button>
+	</div>
+	
+	
+</div>
+
+<br><br><br><br>
+
+
+<div id="foot">
+	<divline></divline>
+	<span>footer</span>
+</div>
+
+
+</body>
+</html>
